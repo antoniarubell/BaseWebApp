@@ -8,15 +8,19 @@
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
     <% include ../helpers/navbar %>
-  
-    <h1>Music Salon</h1>
+
+    <h1>Scores History</h1>
+
   </div>
 
-  <p>Click on the button for a surprise.</p>
+  <input class="search" type="text" placeholder="Search for a city">
+  <button type="button" onClick="searchWeather()">Search</button>
 
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
+  <div class="error-message"></div>
+  
+<div class ="city"></div>
 
-  <div id="image"></div>
+<div class="temp"></div>
   
 </body>
 
