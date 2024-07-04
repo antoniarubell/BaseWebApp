@@ -13,15 +13,6 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.get('/album', function(request, response) {
-  response.render('pages/album');
-});
-
-app.get('/history', function(request, response) {
-  response.render('pages/history');
-});
-
-
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
