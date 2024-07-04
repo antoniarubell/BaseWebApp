@@ -9,11 +9,14 @@ app.use(express.static(__dirname));
 app.set('views', __dirname + '/html');
 app.set('view engine', 'ejs');
 
+
+//This is what gets pages to render when a request is sent for a URL
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.get('/', function(request, response) {
+//Add new pages here with this format:
+app.get('/albums', function(request, response) {
   response.render('pages/albums');
 });
 
